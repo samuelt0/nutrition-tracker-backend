@@ -14,12 +14,9 @@ public interface FoodItemRepository extends JpaRepository<FoodItem, Long> {
     // Find by name
     List<FoodItem> findByName(String name);
 
-    // Find by name containing a specific string (for search functionality)
     List<FoodItem> findByNameContaining(String name);
 
-    // Find by calories less than a specific value
     List<FoodItem> findByCaloriesLessThan(double calories);
 
-    // Find by protein greater than a specific value
     List<FoodItem> findByProteinGreaterThan(double protein);
 }
