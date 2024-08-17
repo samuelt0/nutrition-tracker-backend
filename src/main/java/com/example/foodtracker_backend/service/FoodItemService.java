@@ -53,4 +53,9 @@ public class FoodItemService {
     public void deleteFoodItemById(Long id) {
         foodItemRepository.deleteById(id);
     }
+
+    public List<FoodItem> getFoodItemsByMealtime(String mealtime) {
+        return foodItemRepository.findByMealtime(mealtime);
+    }
+
 }

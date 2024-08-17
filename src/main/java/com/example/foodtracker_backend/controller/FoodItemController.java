@@ -66,4 +66,9 @@ public class FoodItemController {
         foodItemService.deleteFoodItemById(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+
+    public ResponseEntity<List<FoodItem>> getFoodItemsByMealtime(@RequestParam String mealtime) {
+        List<FoodItem> foodItems = foodItemService.getFoodItemsByMealtime(mealtime);
+        return new ResponseEntity<>(foodItems, HttpStatus.OK);
+    }
 }

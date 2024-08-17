@@ -19,4 +19,6 @@ public interface FoodItemRepository extends JpaRepository<FoodItem, Long> {
     List<FoodItem> findByCaloriesLessThan(double calories);
 
     List<FoodItem> findByProteinGreaterThan(double protein);
+
+    List<FoodItem> findByMealtime(String mealtime);
 }
