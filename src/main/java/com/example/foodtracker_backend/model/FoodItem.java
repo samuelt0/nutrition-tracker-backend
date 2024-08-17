@@ -21,12 +21,13 @@ public class FoodItem {
     private double carbohydrates;
     private double sugar;
     private double cholesterol;
+    private int quantity;
 
     // Constructors, getters, and setters
 
     public FoodItem() {}
 
-    public FoodItem(String name, double calories, double protein, double fat, double carbohydrates, double sugar, double cholesterol) {
+    public FoodItem(String name, double calories, double protein, double fat, double carbohydrates, double sugar, double cholesterol, int quantity) {
         this.name = name;
         this.calories = calories;
         this.protein = protein;
@@ -34,6 +35,7 @@ public class FoodItem {
         this.carbohydrates = carbohydrates;
         this.sugar = sugar;
         this.cholesterol = cholesterol;
+        this.quantity = quantity;
     }
 
     // Getters and setters for all fields
@@ -52,6 +54,14 @@ public class FoodItem {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 
     public double getCalories() {
