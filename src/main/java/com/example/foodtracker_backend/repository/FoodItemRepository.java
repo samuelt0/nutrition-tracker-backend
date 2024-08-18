@@ -9,9 +9,6 @@ import java.util.List;
 @Repository
 public interface FoodItemRepository extends JpaRepository<FoodItem, Long> {
     
-    // Custom query methods
-    
-    // Find by name
     List<FoodItem> findByName(String name);
 
     List<FoodItem> findByNameContaining(String name);

@@ -6,6 +6,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
+
 @Entity
 @Table(name = "food_items")
 public class FoodItem {
@@ -24,7 +25,7 @@ public class FoodItem {
     private int quantity;
     private String mealtime;
 
-    // Constructors, getters, and setters
+    
 
     public FoodItem() {}
 
@@ -40,7 +41,7 @@ public class FoodItem {
         this.mealtime = mealtime;
     }
 
-    // Getters and setters for all fields
+
 
     public Long getId() {
         return id;
